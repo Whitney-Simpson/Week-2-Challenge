@@ -1,0 +1,66 @@
+* {
+    background-color: olive;
+    color:aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    text-align: left;
+}  
+
+header h1 {
+    background-color: black;
+    text-decoration-color: blueviolet;
+    text-decoration:solid;
+}
+
+header img {
+    width: 175px;
+    height: 270px;
+    border-style:solid;
+    border-width: 25px;
+    border-color: black;
+}
+
+nav{
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    border: solid black;
+    border-width: 15px;
+    border-style: dashed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100px;
+}
+
+#about {
+    text-shadow: 20px;
+}
+
+.about-me h2, .work-experience h2, .examples h2 {
+    background-color:rgb(137, 159, 137);
+    color: black;
+    display: inline;
+    text-wrap: wrap;
+}
+
+.examples {
+    
+}
+
+.contact {
+    text-align: center;
+    text-decoration-color: blanchedalmond;
+}
+
+footer {
+    text-align: center;
+}
+
+footer ul li {
+    display: inline;
+    font-size: 18px;
+    
+}
