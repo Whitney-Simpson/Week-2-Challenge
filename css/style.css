@@ -1,66 +1,100 @@
+
+/*Universal*/
 * {
     background-color: olive;
-    color:aliceblue;
+    color: aliceblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 header {
     text-align: left;
-}  
-
-header h1 {
-    background-color: black;
-    text-decoration-color: blueviolet;
-    text-decoration:solid;
 }
 
-header img {
-    width: 175px;
-    height: 270px;
-    border-style:solid;
-    border-width: 25px;
-    border-color: black;
-}
-
-nav{
+nav {
     text-align: right;
 }
 
 nav ul li {
     display: inline;
-    border: solid black;
-    border-width: 15px;
-    border-style: dashed;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 100px;
 }
 
+nav ul li a {
+    text-decoration: none;
+}
+/*Hovering over nav ul li with be highlighted*/
+.psuedo li:hover  {
+    box-shadow: 0px 0px 40px;
+}
+/*Gives the aside guidlines*/
+aside {
+    width: 25%;
+    border-right: 4px solid black;
+}
+/*All h2*/
+aside h2 {
+    text-align: right;
+    margin: 2px 10px;
+}
+
+article {
+    width: 75%;
+}
+
 #about {
-    text-shadow: 20px;
+    display: flex;
+}
+/*Profile Image*/
+#about img {
+    width: 125px;
+    height: 200px;
+    border-style: solid;
+    border-width: 15px;
+    border-color: black;
+    transform: none;
+    padding: none;
+}
+/*displaying in flex changes from block*/
+#about article,
+#history, #my-work {
+    display: flex;
 }
 
-.about-me h2, .work-experience h2, .examples h2 {
-    background-color:rgb(137, 159, 137);
-    color: black;
-    display: inline;
-    text-wrap: wrap;
-}
-
-.examples {
-    
-}
-
-.contact {
-    text-align: center;
-    text-decoration-color: blanchedalmond;
+#contact {
+    display: flex;
+    ;
 }
 
 footer {
     text-align: center;
 }
 
-footer ul li {
-    display: inline;
-    font-size: 18px;
-    
+@media screen and (max-width: 992px) {
+    main aside h2 {
+        color: black;
+    }
+
+    main section article p {
+        color: black;
+
+    }
+
+    header h1 {
+        background: rgb(252, 252, 203);
+        color: darkolivegreen;
+    }
+
+    nav ul {
+        color: darkolivegreen;
+    }
+
+    nav ul li {
+        display: flex;
+        flex-wrap: wrap;
+        border-style: none;
+        font-size: 18px;
+    }
 }
+
+@media screen and (max-width: 768px) {}
