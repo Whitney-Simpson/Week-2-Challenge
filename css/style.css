@@ -44,6 +44,7 @@ article {
 
 #about {
     display: flex;
+    text-wrap: wrap;
 }
 /*Profile Image*/
 #about img {
@@ -55,6 +56,17 @@ article {
     transform: none;
     padding: none;
 }
+
+#my-work img {
+    width: 125px;
+    height: 200px;
+    border-style: solid;
+    border-width: 15px;
+    border-color: rgb(192, 225, 237);
+    transform: none;
+    padding: none;
+}
+
 /*displaying in flex changes from block*/
 #about article,
 #history, #my-work {
@@ -97,4 +109,12 @@ footer {
     }
 }
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    main aside h2 {
+        color: yellow;
+    }
+
+    main section article p {
+        color: yellow;
+    }
+}
