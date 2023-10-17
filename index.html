@@ -1,18 +1,20 @@
-c<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <!--Attached a reset stylesheet-->
+    <link rel="stylesheet" href="./css/reset.css">
     <title>Whitney Simpson's Portfolio</title>
 </head>
 
 <body>
-    <header style="border: 1px solid black">
-        <h1>Whitney Simpson</h1>
+    <header id="home">
+        <h1 style="border-color: solid black; border-width: 2px;">Whitney</h1>
         <nav>
-            <ul class="psuedo">
+            <ul class="navbar">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#my-work">Work Experience</a></li>
@@ -22,41 +24,47 @@ c<!DOCTYPE html>
     </header>
     <main>
         <section id="about">
-            <aside style="border: 1px solid black">
+            <aside>
                 <h2>About Me</h2>
             </aside>
-            <article style="border: 1px solid black">
+            <article>
                 <img src="./images/IMG-7116.edited.jpg" alt="Whitney Simpson" />
                 <p>Hello and welcome to my Portfolio!<br>
                     My name is Whitney Simpson. I am a woman who enjoys the outdoors and
                     traveling. When the season is right in Northern Michigan, and I find the time between work
-                    I take part in outdoor activities like disc golf, golf, hiking and a good picnic. Traveling a joy and
+                    I take part in outdoor activities like disc golf, golf, hiking and a good picnic. Traveling a joy
+                    and
                     passion my husband and I both share, more history the better. I also am a "pup" mom of 12 years to a
                     sweet girl named Pearl.<br>
                     My work experiences vary from hospitality, management
-                        and entreprenuership. Three years ago my husband and I embarked
-                        on the journey of becoming liquor store owners.
-                        It has been a great experience not only getting to know our customers,
-                        but also with understanding the marketing behind
-                        our location and the services we should provide. It has also allowed me to
-                        work directly with our software and learn how to add, modify, or change it
-                        as needed. Along with that we manage several rental properties ranging from
-                        commercial to residential.Beyond the last five years my experiences
-                        include working in hospitality environments and having my own
-                        personnal dog training business. I am looking to further my knowledge and career by taking
-                        the journey towards coding to not only learn more,
-                        but to expand my range of talents. I currently find CSS to be my favorite,
-                        but can see the advantages of also being familiar
-                        with Html and JavaScript will be beneficial in the long run.</p>
+                    and entreprenuership. Three years ago my husband and I embarked
+                    on the journey of becoming liquor store owners.
+                    It has been a great experience not only getting to know our customers,
+                    but also with understanding the marketing behind
+                    our location and the services we should provide. It has also allowed me to
+                    work directly with our software and learn how to add, modify, or change it
+                    as needed. Along with that we manage several rental properties ranging from
+                    commercial to residential.Beyond the last five years my experiences
+                    include working in hospitality environments and having my own
+                    personnal dog training business. I am looking to further my knowledge and career by taking
+                    the journey towards coding to not only learn more,
+                    but to expand my range of talents. I currently find CSS to be my favorite,
+                    but can see the advantages of also being familiar
+                    with Html and JavaScript will be beneficial in the long run.</p>
             </article>
         </section>
-        <section id="my-work" style="border: 1px solid black">
+        <section id="my-work">
             <aside>
                 <h2>My Work</h2>
             </aside>
-            <article style="border: 1px solid black">
-                <img src="./images/Pineapple Waterfall.jpg" alt="Fountain"><br>
-                <a href="./Week-1-Challenge">Refractoring Project</a>
+            <!--Added anchor links to images to attach previous work examples-->
+            <article>
+                <p>Click Image for Refactoring Project</p>
+                <a href="https://github.com/Whitney-Simpson/Week-1-Challenge.git">
+                    <img src="./images/Pineapple Waterfall.jpg" alt="Fountain" id="refactoring"></a>
+                <p>Click Image for Portfolio</p>
+                <a href="https://github.com/Whitney-Simpson/Week-1-Challenge.git">
+                    <img src="./images/Flowers and Bunnies.jpg" alt="Bunnies and Flowers" id="portfolio"></a>
             </article>
         </section>
         <section id="contact">
@@ -65,17 +73,21 @@ c<!DOCTYPE html>
             </aside>
             <article>
                 <p>
-                    <ul>
-                        <li>(231) 676 - 9338</li>
-                        <li>Whitmoon4819@gmail.com</li>
-                        <li>GitHub: Whitney-Simpson</li>
-                        <li>Bellaire, MI</li>
-                    </ul>
+                <ul>
+                    <li>(231) 676 - 9338</li>
+                    <li>Whitmoon4819@gmail.com</li>
+                    <li>GitHub: Whitney-Simpson</li>
+                    <li>Bellaire, MI</li>
+                </ul>
                 </p>
             </article>
         </section>
     </main>
+    <!--Added <br> to move "Woderful Day!" down a line-->
     <footer>
+        <p>Thanks and have a<br>
+            Wonderful Day!</p>
     </footer>
 </body>
-</html>-
+
+</html>
